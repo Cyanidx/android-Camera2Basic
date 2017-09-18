@@ -93,6 +93,8 @@ public class Camera2BasicFragment extends Fragment
      * Tag for the {@link Log}.
      */
     private static final String TAG = "Camera2BasicFragment";
+    long time = System.currentTimeMillis();
+    String name = ""+time;
 
     /**
      * Camera state: Showing camera preview.
@@ -438,7 +440,7 @@ public class Camera2BasicFragment extends Fragment
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mFile = new File(getActivity().getExternalFilesDir(null), "pic.jpg");
+        mFile = new File(getActivity().getExternalFilesDir(null), name);
     }
 
     @Override
