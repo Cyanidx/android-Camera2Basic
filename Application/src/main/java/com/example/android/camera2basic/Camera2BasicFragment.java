@@ -161,6 +161,8 @@ public class Camera2BasicFragment extends Fragment
      */
     private String mCameraId;
 
+    private String Test = "123";
+
     /**
      * An {@link AutoFitTextureView} for camera preview.
      */
